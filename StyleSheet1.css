@@ -1,0 +1,309 @@
+﻿body {
+    /*background-image: url('OG1FLx.jpg');*/
+    background-color: gainsboro;
+    font-family: emoji;
+}
+.mytable {
+    margin: 5vh;
+    float: right;
+    margin-left: 70vh;
+    border: 2px solid firebrick;
+}
+.tablediv {
+height:50%;
+}
+.row {
+    margin-right: 0px;
+     margin-left: 0px;
+}
+.myimg {
+    height: 30vh;
+    padding:1vh;
+}
+.price {
+    /*float: right;
+    align-self: flex-end;*/
+    font-size: 2.5vh;
+    /*text-align:right;*/
+}
+.name {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 3vh;
+}
+.name:hover{
+    overflow:visible;
+    white-space:initial;
+}
+.maincard {
+    /*width: 100% !important;*/
+  /*  height: 30%;*/
+    border: 5px solid lavenderblush;
+    border-radius: 3vh;
+    margin:1vh;
+}
+.mycardcol {
+   /* column-count: 4 !important;*/
+    border-radius: 3vh;
+}
+
+
+
+    #carouselExampleSlidesOnly {
+  padding:2vh 0;
+}
+.counter {
+    width: 6vh;
+    text-align: center;
+}
+.w-55 {
+/*width:55% ;*/
+}
+
+
+/*form styles*/
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+}
+
+ fieldset {
+        background: white;
+        border: 0 none;
+        border-radius: 0px;
+        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+        padding: 20px 30px;
+        box-sizing: border-box;
+        width: 80%;
+        margin: 0 10%;
+        /*stacking fieldsets above each other*/
+        position: relative;
+    }
+
+        /*Hide all except first fieldset*/
+        fieldset:not(:first-of-type) {
+            display: none;
+        }
+
+    /*inputs*/
+    #msform input, #msform textarea {
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 0px;
+        margin-bottom: 10px;
+        width: 100%;
+        box-sizing: border-box;
+        font-family: montserrat;
+        color: #2C3E50;
+        font-size: 13px;
+    }
+
+         input:focus, #msform textarea:focus {
+            -moz-box-shadow: none !important;
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+            border: 1px solid #ee0979;
+            outline-width: 0;
+            transition: All 0.5s ease-in;
+            -webkit-transition: All 0.5s ease-in;
+            -moz-transition: All 0.5s ease-in;
+            -o-transition: All 0.5s ease-in;
+        }
+
+    /*buttons*/
+     .action-button {
+        width: 100px;
+        background: #ee0979;
+        font-weight: bold;
+        color: white;
+        border: 0 none;
+        border-radius: 25px;
+        cursor: pointer;
+        padding: 10px 5px;
+        margin: 10px 5px;
+    }
+
+         .action-button:hover, #msform .action-button:focus {
+            box-shadow: 0 0 0 2px white, 0 0 0 3px #ee0979;
+        }
+
+     .action-button-previous {
+        width: 100px;
+        background: #C5C5F1;
+        font-weight: bold;
+        color: white;
+        border: 0 none;
+        border-radius: 25px;
+        cursor: pointer;
+        padding: 10px 5px;
+        margin: 10px 5px;
+    }
+
+         .action-button-previous:hover, #msform .action-button-previous:focus {
+            box-shadow: 0 0 0 2px white, 0 0 0 3px #C5C5F1;
+        }
+
+/*headings*/
+.fs-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.fs-subtitle {
+    font-weight: normal;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/*progressbar*/
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
+}
+
+    #progressbar li {
+        list-style-type: none;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 9px;
+        width: 33.33%;
+        float: left;
+        position: relative;
+        letter-spacing: 1px;
+    }
+
+        #progressbar li:before {
+            content: counter(step);
+            counter-increment: step;
+            width: 24px;
+            height: 24px;
+            line-height: 26px;
+            display: block;
+            font-size: 12px;
+            color: #333;
+            background: white;
+            border-radius: 25px;
+            margin: 0 auto 10px auto;
+        }
+
+        /*progressbar connectors*/
+        #progressbar li:after {
+            content: '';
+            width: 100%;
+            height: 2px;
+            background: white;
+            position: absolute;
+            left: -50%;
+            top: 9px;
+            z-index: -1; /*put it behind the numbers*/
+        }
+ #progressbar li:first-child:after {*/
+            /*connector not needed before the first step*/
+            content: none;
+        }
+        #progressbar li:first-child:after {
+            /*connector not needed before the first step*/
+            content: none;
+        }
+
+        /*marking active/completed steps green*/
+        /*The number of the step and the connector before it = green*/
+        #progressbar li.active:before, #progressbar li.active:after {
+            background: #ee0979;
+            color: white;
+        }
+
+
+/* Not relevant to this form */
+.dme_link {
+    margin-top: 30px;
+    text-align: center;
+}
+
+    .dme_link a {
+        background: #FFF;
+        font-weight: bold;
+        color: #ee0979;
+        border: 0 none;
+        border-radius: 25px;
+        cursor: pointer;
+        padding: 5px 25px;
+        font-size: 12px;
+    }
+
+.dme_link a:hover, .dme_link a:focus {
+            background: #C5C5F1;
+            text-decoration: none;
+        }
+
+
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 18.25%;
+    padding: 0 5px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+    margin: 0 10px;
+}
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+.cardimgc {
+    font-size: 20px;
+    background-color: rgba(0,0,0,.03);
+    width: 5%;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 3px;
+}
+.btn:focus {
+outline:none;
+box-shadow:none;
+}
+ input.ng-touched.ng-invalid {
+    border: 1px solid red;
+}
+ input.ng-touched.ng-valid {
+    border: 1px solid green;
+}
+.otp {
+border:0;
+border-bottom:1px solid black;
+text-align:center;
+width:5vh;
+}
+.otpbox {
+padding-left:0px !important;
+padding-right:0px !important;
+}
+.otpheading {
+    display: block;
+    text-align: center;
+}
